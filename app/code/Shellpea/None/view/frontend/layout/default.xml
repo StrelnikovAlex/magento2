@@ -6,5 +6,10 @@
       name="Shellpea_None_Hello"
            template="Shellpea_None::hello.phtml" />
     </referenceContainer>
+    <referenceContainer name="content" label="Main Content Area">
+    <block class="Magento\Framework\View\Element\Template"
+      name="Shellpea_None_Hello"
+           template="Shellpea_None::colors.phtml" />
+    </referenceContainer>
   </body>
 </page>
