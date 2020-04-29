@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
   <body>
     <referenceContainer name="content" label="Main Content Area">
-    <block class="Magento\Framework\View\Element\Template" name="Shellpea_None_Hello" template="Shellpea_None::colors.phtml">
+    <block class="Magento\Framework\View\Element\Template" name="Shellpea_None_Colors" template="Shellpea_None::colors.phtml">
       <arguments>
         <argument name="color" xsi:type="string">orange</argument>
       </arguments>

@@ -1,14 +1,22 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
   <body>
+    <referenceContainer name="top.links">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="Shellpea_None_Link"
+                   template="Shellpea_None::link.phtml" >
+            </block>
+        </referenceContainer>
+
     <referenceContainer name="content.top" label="Main Content Top">
-    <block class="Magento\Framework\View\Element\Template"
-      name="Shellpea_None_Hello"
+      <block class="Magento\Framework\View\Element\Template"
+        name="Shellpea_None_Hello"
            template="Shellpea_None::hello.phtml" />
     </referenceContainer>
+
     <referenceContainer name="content" label="Main Content Area">
-    <block class="Magento\Framework\View\Element\Template"
-      name="Shellpea_None_Colors"
+      <block class="Magento\Framework\View\Element\Template"
+        name="Shellpea_None_Colors"
            template="Shellpea_None::colors.phtml" />
     </referenceContainer>
   </body>
