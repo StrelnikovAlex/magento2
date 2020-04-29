@@ -3,4 +3,7 @@
   <head>
     <title>Done</title>
   </head>
+  <body>
+        <referenceBlock name="Shellpea_None_Colors" remove="true"/>
+    </body>
 </page>

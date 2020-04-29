@@ -8,7 +8,7 @@
     </referenceContainer>
     <referenceContainer name="content" label="Main Content Area">
     <block class="Magento\Framework\View\Element\Template"
-      name="Shellpea_None_Hello"
+      name="Shellpea_None_Colors"
            template="Shellpea_None::colors.phtml" />
     </referenceContainer>
   </body>
