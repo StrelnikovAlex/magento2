@@ -23,6 +23,14 @@
                 disabled="false"/>
     </type>
 
+    <type name="Magento\Theme\Block\Html\Breadcrumbs">
+        <plugin
+                name="CustomBreadcrumbs"
+                type="Shellpea\None\Plugin\CustomBreadcrumbs"
+                sortOrder="1"
+                disabled="false"/>
+    </type>
+
     <preference for="DateTimeInterface" type="DateTime" />
     <preference for="Psr\Log\LoggerInterface" type="Magento\Framework\Logger\Monolog" />
     <preference for="Magento\Framework\EntityManager\EntityMetadataInterface" type="Magento\Framework\EntityManager\EntityMetadata" />
