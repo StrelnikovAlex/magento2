@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
-    <event name="controller_action_predispatch">
-        <observer name="my_action_predispatch" instance="Shellpea\ForObserv\Observer\ObserverTask" disabled="true" />
+    <event name="controller_front_send_response_before">
+        <observer name="show_the_generated_html" instance="Shellpea\RecHtml\Observer\RecHtml" />
     </event>
 </config>

@@ -243,6 +243,7 @@ return [
         'Shellpea_ForObserv' => 1,
         'Shellpea_None' => 1,
         'Shellpea_None2' => 1,
+        'Shellpea_RecHtml' => 1,
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
