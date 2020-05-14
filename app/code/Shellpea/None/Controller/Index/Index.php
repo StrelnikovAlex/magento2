@@ -1,20 +1,20 @@
 <?php
-namespace Shellpea\None\Controller\Index;
+namespace Shellpea\MyRout\Controller\Index;
 
-class Index extends \Magento\Framework\App\Action\Action
+class Helloworld extends \Magento\Framework\App\Action\Action
 {
-	protected $_pageFactory;
+    protected $_rawResultFactory;
 
-	public function __construct(
-		\Magento\Framework\App\Action\Context $context,
-		\Magento\Framework\View\Result\PageFactory $pageFactory)
-	{
-		$this->_pageFactory = $pageFactory;
-		return parent::__construct($context);
-	}
+    public function __construct(
+        \Magento\Framework\App\Action\Context $context,
+        \Magento\Framework\Controller\Result\Raw $rawResultFactory)
+    {
+			$this->_rawResultFactory = $rawResultFactory;
+			return parent::__construct($context);
+    }
 
-	public function execute()
-	{
-		return $this->_pageFactory->create();
-	}
+    public function execute()
+    {
+			return $this->_rawResultFactory->setContents('Hello World');
+    }
 }
