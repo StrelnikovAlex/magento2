@@ -3,9 +3,9 @@
 namespace Shellpea\None\Plugin;
 
 class CustomPrice
+{
+    public function afterGetPrice($myPrice)
     {
-        public function afterGetPrice($myPrice){
-          return $myPrice = 123;
-        }
-
+        return $myPrice = 123;
     }
+}

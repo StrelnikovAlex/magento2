@@ -3,8 +3,9 @@
 namespace Shellpea\None\Plugin;
 
 class CustomFooter
+{
+    public function aroundGetCopyright($result)
     {
-        public function aroundGetCopyright($result) {
-            return $result = 'Customized copyright!';
-        }
+        return $result = 'Customized copyright!';
     }
+}

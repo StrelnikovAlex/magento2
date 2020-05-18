@@ -10,13 +10,12 @@ class ObserverTask implements ObserverInterface
 
     public function __construct(\Psr\Log\LoggerInterface $logger)
     {
-      $this->logger = $logger;
+        $this->logger = $logger;
     }
-
     public function execute(\Magento\Framework\Event\Observer $observer)
-	  {
-		  $myEventData = $observer->getRequest();
-		  $url = $myEventData->getPathInfo();
-      $this->logger->info($url);
+    {
+        $myEventData = $observer->getRequest();
+        $url = $myEventData->getPathInfo();
+        $this->logger->info($url);
     }
 }

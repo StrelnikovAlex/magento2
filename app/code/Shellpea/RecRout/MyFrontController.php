@@ -10,31 +10,30 @@ use Magento\Framework\App\ObjectManager;
 
 class MyFrontController extends FrontController
 {
-  protected $_routerList;
+    protected $_routerList;
 
-  private $logger;
+    private $logger;
 
-  public function __construct(
-    RouterListInterface $routerList,
-    ResponseInterface $response,
-    ?LoggerInterface $logger = null)
-    {
-      $this->logger = $logger
-      ?? ObjectManager::getInstance()->get(LoggerInterface::class);
+    public function __construct(
+        RouterListInterface $routerList,
+        ResponseInterface $response,
+        ?LoggerInterface $logger = null
+    ) {
+        $this->logger = $logger
+        ?? ObjectManager::getInstance()->get(LoggerInterface::class);
       
-      parent::__construct(
-        $routerList,
-        $response,
-        $logger
-      );
+        parent::__construct(
+            $routerList,
+            $response,
+            $logger
+        );
     }
 
     public function dispatch(\Magento\Framework\App\RequestInterface $request)
     {
-      foreach ($this->_routerList as $router)
-      {
-        $this->logger->info(get_class($router));
-      }
-      return parent::dispatch($request);
+        foreach ($this->_routerList as $router) {
+            $this->logger->info(get_class($router));
+        }
+        return parent::dispatch($request);
     }
-  }
+}

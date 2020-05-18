@@ -11,12 +11,12 @@ class Index extends \Magento\Backend\App\AbstractAction
     protected $resultRaw;
 
     public function __construct(
-      Context $context,
-      Raw $resultRaw)
-      {
+        Context $context,
+        Raw $resultRaw
+    ) {
         $this->resultRaw = $resultRaw;
         return parent::__construct($context);
-      }
+    }
 
     protected function _isAllowed()
     {
@@ -29,7 +29,6 @@ class Index extends \Magento\Backend\App\AbstractAction
 
     public function execute()
     {
-      return $this->resultRaw->setContents('!!!!!!!!!!!!!!!!!!');
+        return $this->resultRaw->setContents('!!!!!!!!!!!!!!!!!!');
     }
-
 }
