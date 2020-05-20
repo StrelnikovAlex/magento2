@@ -17,7 +17,8 @@ class Info extends \Magento\Framework\App\Action\Action
     {
         $html = $this->_resultPageFactory->create()
                                          ->getLayout()
-                                         ->createBlock('Shellpea\MyBlock\Block\Info')
+                                         //->createBlock('Shellpea\MyBlock\Block\Info')
+                                         ->createBlock('Magento\Framework\View\Element\Text')->setText('Done task two')
                                          ->toHtml();
         $this->getResponse()->setBody($html);
     }
