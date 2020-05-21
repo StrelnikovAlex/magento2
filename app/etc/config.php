@@ -243,6 +243,7 @@ return [
         'Shellpea_MyAdmin' => 1,
         'Shellpea_MyBlock' => 1,
         'Shellpea_MyRout' => 0,
+        'Shellpea_MyTempl' => 1,
         'Shellpea_None' => 0,
         'Shellpea_None2' => 0,
         'Shellpea_RecAllrouts' => 0,
