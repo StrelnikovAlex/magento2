@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Задание от Андрея</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+  <style type="text/css">
+    #apple { cursor: pointer; }
+    #google {
+      display: none;
+      padding: 5px;
+      background-color: #CDE;
+      border: 1px solid;
+    }
+  </style>
+
+  <script>
+
+  $(function () {
+  $("#apple").on("click", function(){
+        $("#google").slideToggle("fast");
+    });
+});
+</script>
+
+  <button id="apple">Если фанат Apple нажми</button>
+  <p id="google">Google one love</p>
+</body>
+</html>
