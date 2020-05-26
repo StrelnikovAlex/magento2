@@ -242,6 +242,7 @@ return [
         'MSP_TwoFactorAuth' => 1,
         'Shellpea_MyAdmin' => 1,
         'Shellpea_MyBlock' => 1,
+        'Shellpea_MyJS' => 1,
         'Shellpea_MyRout' => 0,
         'Shellpea_MyTempl' => 1,
         'Shellpea_None' => 0,
